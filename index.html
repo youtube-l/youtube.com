@@ -1,71 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>YouTube Video Player</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi web con youtube.com</title>
     <style>
         body {
-            background: #0f0f0f;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding-top: 150px;
             margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
         }
-        .logo {
-            color: #ff0000;
-            font-size: 48px;
-            font-weight: bold;
+        .container {
+            max-width: 800px;
+            padding: 40px;
+        }
+        h1 {
+            font-size: 4em;
             margin-bottom: 20px;
         }
-        .message {
-            font-size: 18px;
-            margin: 10px 0;
-            color: #aaa;
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 30px;
         }
-        .countdown {
-            margin-top: 30px;
-            color: #666;
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: white;
+            color: #333;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+        }
+        .button:hover {
+            transform: scale(1.1);
         }
     </style>
-    <script>
-        // Redirección después de 3 segundos
-        setTimeout(function() {
-            window.location.href = "https://yip.su/2kY5E5";
-        }, 3000);
-        
-        // Contador
-        let seconds = 3;
-        const counterElement = document.getElementById("counter");
-        
-        const interval = setInterval(function() {
-            seconds--;
-            if (counterElement) {
-                counterElement.textContent = seconds;
-            }
-            if (seconds <= 0) {
-                clearInterval(interval);
-            }
-        }, 1000);
-    </script>
 </head>
 <body>
-    <div class="logo">▶ YouTube</div>
-    
-    <div class="message">🎬 Iniciando reproductor de video...</div>
-    <div class="message">📡 Conectando con servidores...</div>
-    
-    <div class="countdown">
-        Redireccionando en <span id="counter">3</span> segundos
-    </div>
-    
-    <div style="margin-top: 40px; font-size: 14px; color: #555;">
-        <p>Si no redirige automáticamente,</p>
-        <p>
-            <a href="https://yip.su/2kY5E5" 
-               style="color: #3ea6ff; text-decoration: none;">
-               Haz clic aquí para ver el video
-            </a>
-        </p>
+    <div class="container">
+        <h1>✨ ¡Bienvenido!</h1>
+        <p>Esta es mi nueva web con el dominio youtube.com</p>
+        <p>Próximamente más contenido...</p>
+        <a href="#" class="button">Comenzar</a>
     </div>
 </body>
 </html>
